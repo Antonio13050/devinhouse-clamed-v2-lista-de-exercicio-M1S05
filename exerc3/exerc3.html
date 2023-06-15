@@ -3,66 +3,59 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lista de exercícios</title>
+    <title>Exercício 3</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <script src="exerc3.js" defer></script>
   </head>
   <body>
     <header class="mb-4">
       <nav class="navbar bg-dark border-bottom border-bottom-dark">
         <div class="container-fluid w-75">
-          <a class="navbar-brand fs-2" href="#">Lista de exercícios [M1S05]</a>
+          <a class="navbar-brand fs-2" href="../index.html"
+            >Lista de exercícios [M1S05]</a
+          >
         </div>
       </nav>
     </header>
     <div class="container-fluid w-75">
-      <!--Exec 1-->
-      <div class="exec py-3">
-        <h3>
-          <a href="exerc1/exerc1.html"
-            >Ex 1 - Escreva um programa para classificação idade</a
-          >
-        </h3>
-        <p class="pt-4">
-          Escreva um programa que atribua um valor a uma variável idade e
-          determine se ela se enquadra nas categorias: criança (0-12 anos),
-          adolescente (13-17 anos), adulto (18-59 anos) ou idoso (60 anos ou
-          mais). Use uma estrutura condicional (if, else if, else).
-        </p>
-      </div>
-      <!--------------------------------->
-      <!--Exec 2-->
-      <div class="exec py-3">
-        <h3>
-          <a href="exerc2/exerc2.html"
-            >Ex 2 - Escreva um programa para tradução de cores</a
-          >
-        </h3>
-        <p class="pt-4">
-          Escreva um programa que atribua um valor a uma variável cor em inglês
-          e imprima a tradução para a mesma cor em português (mínimo 5 exemplos
-          e tratar o padrão). Utilize uma estrutura condicional (switch) para
-          fazer o mapeamento das cores.
-        </p>
-      </div>
-      <!--------------------------------->
-      <!--Exec 3-->
-      <div class="exec py-3">
-        <h3>
-          <a href="exerc3/exerc3.html"
-            >Ex 3 - Escreva um programa para verificar número primo</a
-          >
-        </h3>
+      <!--Descrição-->
+      <div class="desc py-3">
+        <h3>Exercício 3 - Escreva um programa para verificar número primo</h3>
         <p class="pt-4">
           Escreva um programa que atribua um valor a uma variável número e
           verifique se ele é um número primo. Um número primo é aquele que é
           divisível apenas por 1 e por ele mesmo. Use uma estrutura de repetição
           (do while) para verificar as divisões.
         </p>
+      </div>
+      <!--------------------------------->
+      <!--Resolução-->
+      <div class="resolucao">
+        <form action="">
+          <div class="mb-3">
+            <label for="numero" class="form-label">Digite um número</label>
+            <input
+              type="text"
+              class="form-control"
+              id="numero"
+              placeholder="Digite um número"
+              required
+            />
+          </div>
+
+          <div class="my-4">
+            <h1 id="resultado"></h1>
+          </div>
+          <div class="buttons">
+            <button id="btnVerificar" class="btn btn-primary">Verificar</button>
+            <button id="btnLimpar" class="btn btn-primary">Limpar</button>
+          </div>
+        </form>
       </div>
       <!--------------------------------->
     </div>
