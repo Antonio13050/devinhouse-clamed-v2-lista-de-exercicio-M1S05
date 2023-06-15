@@ -3,45 +3,29 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lista de exercícios</title>
+    <title>Exercício 2</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <script src="exerc2.js" defer></script>
   </head>
   <body>
     <header class="mb-4">
       <nav class="navbar bg-dark border-bottom border-bottom-dark">
         <div class="container-fluid w-75">
-          <a class="navbar-brand fs-2" href="#">Lista de exercícios [M1S05]</a>
+          <a class="navbar-brand fs-2" href="../index.html"
+            >Lista de exercícios [M1S05]</a
+          >
         </div>
       </nav>
     </header>
     <div class="container-fluid w-75">
-      <!--Exec 1-->
-      <div class="exec py-3">
-        <h3>
-          <a href="exerc1/exerc1.html"
-            >Ex 1 - Escreva um programa para classificação idade</a
-          >
-        </h3>
-        <p class="pt-4">
-          Escreva um programa que atribua um valor a uma variável idade e
-          determine se ela se enquadra nas categorias: criança (0-12 anos),
-          adolescente (13-17 anos), adulto (18-59 anos) ou idoso (60 anos ou
-          mais). Use uma estrutura condicional (if, else if, else).
-        </p>
-      </div>
-      <!--------------------------------->
-      <!--Exec 2-->
-      <div class="exec py-3">
-        <h3>
-          <a href="exerc2/exerc2.html"
-            >Ex 2 - Escreva um programa para tradução de cores</a
-          >
-        </h3>
+      <!--Descrição-->
+      <div class="desc py-3">
+        <h3>Exercício 2 - Escreva um programa para tradução de cores</h3>
         <p class="pt-4">
           Escreva um programa que atribua um valor a uma variável cor em inglês
           e imprima a tradução para a mesma cor em português (mínimo 5 exemplos
@@ -49,6 +33,33 @@
           fazer o mapeamento das cores.
         </p>
       </div>
+      <!--------------------------------->
+      <!--Resolução-->
+      <div class="resolucao">
+        <form action="">
+          <div class="mb-3">
+            <label for="cor" class="form-label"
+              >Digite a cor que deseja traduzir</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="cor"
+              placeholder="Black"
+              required
+            />
+          </div>
+
+          <div class="my-4">
+            <h1 id="traducao"></h1>
+          </div>
+          <div class="buttons">
+            <button id="btnTraduzir" class="btn btn-primary">Traduzir</button>
+            <button id="btnLimpar" class="btn btn-primary">Limpar</button>
+          </div>
+        </form>
+      </div>
+      <!--------------------------------->
       <!--------------------------------->
     </div>
     <script
