@@ -64,16 +64,42 @@
             />
           </div>
           <!--------------------------------->
-
-          <div id="resultado" class="my-4"></div>
-          <div class="buttons">
+          <div class="buttons mb-5">
             <button id="btnCadastrar" class="btn btn-primary">
               Cadastrar Produto
             </button>
             <button id="btnLimpar" class="btn btn-primary">Limpar</button>
             <button id="btnExibir" class="btn btn-primary">
-              Exibir Produtos
+              Atualizar Lista de Produtos
             </button>
+          </div>
+
+          <!--Tabela de produtos-->
+          <div class="lista-produtos">
+            <h3>Lista de produtos</h3>
+          </div>
+          <div id="resultado" class="my-4">
+            <table id="tabela-produtos" class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Nome</th>
+                  <th scope="col">Valor</th>
+                </tr>
+              </thead>
+              <tbody id="body-lista-produtos"></tbody>
+            </table>
+            <!--------------------------------->
+            <!--Tabela de Totais-->
+            <table id="tabela-totais" class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Quantidade de produtos</th>
+                  <th scope="col">Valor total dos produtos</th>
+                </tr>
+              </thead>
+              <tbody id="body-total-produtos"></tbody>
+            </table>
+            <!--------------------------------->
           </div>
         </form>
       </div>
