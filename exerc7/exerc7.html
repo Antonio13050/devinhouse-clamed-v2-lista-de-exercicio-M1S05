@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exercício 7</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script src="exerc7.js" defer></script>
+  </head>
+  <body>
+    <header class="mb-4">
+      <nav class="navbar bg-dark border-bottom border-bottom-dark">
+        <div class="container-fluid w-75">
+          <a class="navbar-brand fs-2" href="../index.html"
+            >Lista de exercícios [M1S05]</a
+          >
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid w-75">
+      <!--Descrição-->
+      <div class="desc py-3">
+        <h3>Exercício 7 - Escreva um programa para manipular array</h3>
+        <p class="pt-4">
+          Escreva um programa que terá três funções (utilize os métodos push,
+          pop, slice):
+        </p>
+        <ul>
+          <li>
+            A. Escreva uma função chamada adicionarElemento que recebe como
+            parâmetros um array e um elemento, e adiciona o elemento ao final do
+            array. Em seguida, retorne o array atualizado.
+          </li>
+          <li>
+            B. Escreva uma função chamada removerUltimoElemento que recebe como
+            parâmetro um array, remove o último elemento do array e retorna o
+            elemento removido.
+          </li>
+          <li>
+            C. Escreva uma função chamada removerElementosIntervalo que recebe
+            como parâmetros um array, um índice inicial e um índice final. A
+            função deve remover os elementos do array compreendidos entre os
+            índices inicial e final. Em seguida, retorne o array atualizado.
+          </li>
+        </ul>
+      </div>
+      <!--------------------------------->
+      <!--Resolução-->
+      <div class="resolucao">
+        <form action="">
+          <!--Nome-->
+          <div class="mb-3">
+            <label for="elemento" class="form-label">Digite algo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="elemento"
+              placeholder="Digite aqui"
+              required
+            />
+          </div>
+          <!--------------------------------->
+
+          <div class="buttons mb-5">
+            <button id="btnCadastrar" class="btn btn-primary">
+              Inserir elemento
+            </button>
+            <button id="btnLimpar" class="btn btn-primary">Limpar</button>
+            <button id="btnExibir" class="btn btn-primary">
+              Atualizar Lista de elementos
+            </button>
+            <button id="btnRemoverUltimoElemento" class="btn btn-primary">
+              Remover ultimo elemento
+            </button>
+          </div>
+
+          <!--Tabela-->
+          <div class="lista">
+            <h3>Lista de elementos</h3>
+          </div>
+          <div id="resultado" class="my-4">
+            <table id="tabela-elementos" class="table">
+              <thead>
+                <tr>
+                  <td>ID</td>
+                  <td>Elemento</td>
+                </tr>
+              </thead>
+              <tbody id=""></tbody>
+            </table>
+          </div>
+        </form>
+        <!--Remover elementos entre intervalo-->
+        <h3>Remover elementos</h3>
+        <p>
+          Para remover um elemento insira o elemento incial e a partir dele
+          quantos mais deseja remover
+        </p>
+        <form>
+          <div class="row">
+            <div class="form-group col-md-3">
+              <label for="inicio">Inicio</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inicio"
+                placeholder=""
+              />
+            </div>
+            <div class="form-group col-md-3">
+              <label for="qtd">Até</label>
+              <input type="text" class="form-control" id="qtd" placeholder="" />
+            </div>
+          </div>
+          <div class="mt-3">
+            <button id="btnRemoverElementos" class="btn btn-primary">
+              Remover elementos
+            </button>
+          </div>
+        </form>
+        <!--------------------------------->
+      </div>
+      <!--------------------------------->
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
