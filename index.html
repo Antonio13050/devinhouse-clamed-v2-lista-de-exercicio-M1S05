@@ -1,162 +1,190 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lista de exercícios</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <header class="mb-4">
-      <nav class="navbar bg-dark border-bottom border-bottom-dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Lista de exercícios</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <header class="mb-4">
+            <nav class="navbar bg-dark border-bottom border-bottom-dark">
+                <div class="container-fluid w-75">
+                    <a class="navbar-brand fs-2" href="#"
+                        >Lista de exercícios [M1S05]</a
+                    >
+                </div>
+            </nav>
+        </header>
         <div class="container-fluid w-75">
-          <a class="navbar-brand fs-2" href="#">Lista de exercícios [M1S05]</a>
+            <!--Exec 1-->
+            <div class="exec py-3">
+                <h3>
+                    <a href="exerc1/exerc1.html"
+                        >Ex 1 - Escreva um programa para classificação idade</a
+                    >
+                </h3>
+                <p class="pt-4">
+                    Escreva um programa que atribua um valor a uma variável
+                    idade e determine se ela se enquadra nas categorias: criança
+                    (0-12 anos), adolescente (13-17 anos), adulto (18-59 anos)
+                    ou idoso (60 anos ou mais). Use uma estrutura condicional
+                    (if, else if, else).
+                </p>
+            </div>
+            <!--------------------------------->
+            <!--Exec 2-->
+            <div class="exec py-3">
+                <h3>
+                    <a href="exerc2/exerc2.html"
+                        >Ex 2 - Escreva um programa para tradução de cores</a
+                    >
+                </h3>
+                <p class="pt-4 t-">
+                    Escreva um programa que atribua um valor a uma variável cor
+                    em inglês e imprima a tradução para a mesma cor em português
+                    (mínimo 5 exemplos e tratar o padrão). Utilize uma estrutura
+                    condicional (switch) para fazer o mapeamento das cores.
+                </p>
+            </div>
+            <!--------------------------------->
+            <!--Exec 3-->
+            <div class="exec py-3">
+                <h3>
+                    <a href="exerc3/exerc3.html"
+                        >Ex 3 - Escreva um programa para verificar número
+                        primo</a
+                    >
+                </h3>
+                <p class="pt-4">
+                    Escreva um programa que atribua um valor a uma variável
+                    número e verifique se ele é um número primo. Um número primo
+                    é aquele que é divisível apenas por 1 e por ele mesmo. Use
+                    uma estrutura de repetição (do while) para verificar as
+                    divisões.
+                </p>
+            </div>
+            <!--------------------------------->
+            <!--Exec 4-->
+            <div class="exec py-3">
+                <h3>
+                    <a href="exerc4/exerc4.html"
+                        >Ex 4 - Escreva um programa que imprima a sequência de
+                        Fibonacci até o número informado</a
+                    >
+                </h3>
+                <p class="pt-4">
+                    Escreva um programa que imprima a sequência de Fibonacci até
+                    o número N atribuído na variável de número. A sequência de
+                    Fibonacci é formada pela soma dos dois números anteriores:
+                    0, 1, 1, 2, 3, 5, 8, 13, ... Use uma estrutura de repetição
+                    (while) para gerar a sequência.
+                </p>
+            </div>
+            <!--------------------------------->
+            <!--Exec 5-->
+            <div class="exec py-3">
+                <h3>
+                    <a href="exerc5/exerc5.html"
+                        >Ex 5 - Escreva um programa que verifique um array de
+                        palavras</a
+                    >
+                </h3>
+                <p class="pt-4">
+                    Escreva um programa que percorra um array de palavras e
+                    exiba todas as palavras que possuem mais de 5 caracteres.
+                    Utilize a estrutura de repetição for of para percorrer o
+                    array.
+                </p>
+            </div>
+            <!--------------------------------->
+            <!--Exec 6-->
+            <div class="exec py-3">
+                <h3>
+                    <a href="exerc6/exerc6.html"
+                        >Ex 6 - Escreva um programa que percorra um array de
+                        objetos de produtos</a
+                    >
+                </h3>
+                <p class="pt-4">
+                    Escreva um programa que percorra um array de objetos que
+                    representam produtos e exiba o nome e o preço de cada
+                    produto. Após imprimir essas informações imprima o total de
+                    produtos e o valor total de todos produtos.
+                </p>
+            </div>
+            <!--------------------------------->
+            <!--Exec 7-->
+            <div class="exec py-3">
+                <h3>
+                    <a href="exerc7/exerc7.html"
+                        >Ex 7 - Escreva um programa para manipular array</a
+                    >
+                </h3>
+                <p class="pt-4">
+                    Escreva um programa que terá três funções (utilize os
+                    métodos push, pop, slice):
+                </p>
+                <ul>
+                    <li>
+                        A. Escreva uma função chamada adicionarElemento que
+                        recebe como parâmetros um array e um elemento, e
+                        adiciona o elemento ao final do array. Em seguida,
+                        retorne o array atualizado.
+                    </li>
+                    <li>
+                        B. Escreva uma função chamada removerUltimoElemento que
+                        recebe como parâmetro um array, remove o último elemento
+                        do array e retorna o elemento removido.
+                    </li>
+                    <li>
+                        C. Escreva uma função chamada removerElementosIntervalo
+                        que recebe como parâmetros um array, um índice inicial e
+                        um índice final. A função deve remover os elementos do
+                        array compreendidos entre os índices inicial e final. Em
+                        seguida, retorne o array atualizado.
+                    </li>
+                </ul>
+            </div>
+            <!--------------------------------->
+            <!--Exec 8-->
+            <div class="exec py-3">
+                <h3>
+                    <a href="exerc8/exerc8.html"
+                        >Ex 8 - Escreva um programa para testar funções de
+                        calculadora</a
+                    >
+                </h3>
+                <p class="pt-4">
+                    Escreva uma função chamada calculadora que recebe três
+                    parâmetros: dois números e uma função de operação
+                    matemática. A função calculadora deve executar a operação
+                    matemática nos dois números fornecidos e retornar o
+                    resultado. Teste a função utilizando diferentes operações
+                    como adição, subtração, multiplicação e divisão.
+                </p>
+            </div>
+            <!--------------------------------->
         </div>
-      </nav>
-    </header>
-    <div class="container-fluid w-75">
-      <!--Exec 1-->
-      <div class="exec py-3">
-        <h3>
-          <a href="exerc1/exerc1.html"
-            >Ex 1 - Escreva um programa para classificação idade</a
-          >
-        </h3>
-        <p class="pt-4">
-          Escreva um programa que atribua um valor a uma variável idade e
-          determine se ela se enquadra nas categorias: criança (0-12 anos),
-          adolescente (13-17 anos), adulto (18-59 anos) ou idoso (60 anos ou
-          mais). Use uma estrutura condicional (if, else if, else).
-        </p>
-      </div>
-      <!--------------------------------->
-      <!--Exec 2-->
-      <div class="exec py-3">
-        <h3>
-          <a href="exerc2/exerc2.html"
-            >Ex 2 - Escreva um programa para tradução de cores</a
-          >
-        </h3>
-        <p class="pt-4 t-">
-          Escreva um programa que atribua um valor a uma variável cor em inglês
-          e imprima a tradução para a mesma cor em português (mínimo 5 exemplos
-          e tratar o padrão). Utilize uma estrutura condicional (switch) para
-          fazer o mapeamento das cores.
-        </p>
-      </div>
-      <!--------------------------------->
-      <!--Exec 3-->
-      <div class="exec py-3">
-        <h3>
-          <a href="exerc3/exerc3.html"
-            >Ex 3 - Escreva um programa para verificar número primo</a
-          >
-        </h3>
-        <p class="pt-4">
-          Escreva um programa que atribua um valor a uma variável número e
-          verifique se ele é um número primo. Um número primo é aquele que é
-          divisível apenas por 1 e por ele mesmo. Use uma estrutura de repetição
-          (do while) para verificar as divisões.
-        </p>
-      </div>
-      <!--------------------------------->
-      <!--Exec 4-->
-      <div class="exec py-3">
-        <h3>
-          <a href="exerc4/exerc4.html"
-            >Ex 4 - Escreva um programa que imprima a sequência de Fibonacci até
-            o número informado</a
-          >
-        </h3>
-        <p class="pt-4">
-          Escreva um programa que imprima a sequência de Fibonacci até o número
-          N atribuído na variável de número. A sequência de Fibonacci é formada
-          pela soma dos dois números anteriores: 0, 1, 1, 2, 3, 5, 8, 13, ...
-          Use uma estrutura de repetição (while) para gerar a sequência.
-        </p>
-      </div>
-      <!--------------------------------->
-      <!--Exec 5-->
-      <div class="exec py-3">
-        <h3>
-          <a href="exerc5/exerc5.html"
-            >Ex 5 - Escreva um programa que verifique um array de palavras</a
-          >
-        </h3>
-        <p class="pt-4">
-          Escreva um programa que percorra um array de palavras e exiba todas as
-          palavras que possuem mais de 5 caracteres. Utilize a estrutura de
-          repetição for of para percorrer o array.
-        </p>
-      </div>
-      <!--------------------------------->
-      <!--Exec 6-->
-      <div class="exec py-3">
-        <h3>
-          <a href="exerc6/exerc6.html"
-            >Ex 6 - Escreva um programa que percorra um array de objetos de
-            produtos</a
-          >
-        </h3>
-        <p class="pt-4">
-          Escreva um programa que percorra um array de objetos que representam
-          produtos e exiba o nome e o preço de cada produto. Após imprimir essas
-          informações imprima o total de produtos e o valor total de todos
-          produtos.
-        </p>
-      </div>
-      <!--------------------------------->
-      <!--Exec 7-->
-      <div class="exec py-3">
-        <h3>
-          <a href="exerc7/exerc7.html"
-            >Ex 7 - Escreva um programa para manipular array</a
-          >
-        </h3>
-        <p class="pt-4">
-          Escreva um programa que terá três funções (utilize os métodos push,
-          pop, slice):
-        </p>
-        <ul>
-          <li>
-            A. Escreva uma função chamada adicionarElemento que recebe como
-            parâmetros um array e um elemento, e adiciona o elemento ao final do
-            array. Em seguida, retorne o array atualizado.
-          </li>
-          <li>
-            B. Escreva uma função chamada removerUltimoElemento que recebe como
-            parâmetro um array, remove o último elemento do array e retorna o
-            elemento removido.
-          </li>
-          <li>
-            C. Escreva uma função chamada removerElementosIntervalo que recebe
-            como parâmetros um array, um índice inicial e um índice final. A
-            função deve remover os elementos do array compreendidos entre os
-            índices inicial e final. Em seguida, retorne o array atualizado.
-          </li>
-        </ul>
-      </div>
-      <!--------------------------------->
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
